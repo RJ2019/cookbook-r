@@ -44,7 +44,7 @@ when 'debian'
 
   apt_repository 'cran-apt-repo' do
     uri "#{node['r']['cran_mirror']}/bin/linux/#{node['platform']}"
-    distribution "#{distro_name}/"
+    distribution "#{distro_name}-cran35/"
     components []
     keyserver keyserver_url
     key key_id
